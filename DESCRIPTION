@@ -3,7 +3,7 @@ Type: Package
 Title: ggstrata() plots a stratigraphic column.
 Version: 0.1.0
 Author: Han Zeng
-Maintainer: hzeng@nigpas.ac.cn
+Maintainer: <hzeng@nigpas.ac.cn>
 Description: ggstrata() reads two data frames and plots a stratigraphic column by using ggplot().
 License: What license is it under?
 Encoding: UTF-8
