@@ -18,11 +18,11 @@
 #'
 #' @note More options is under development.
 #'
-#' @author Han Zeng \email{hzeng@@nigpas.ac.cn}, noticing the DOUBLE @@!
+#' @author Han Zeng \email{hzeng@@nigpas.ac.cn}
 #'
-#' @references H. Wickham. 2016. ggplot2: Elegant Graphics for Data Analysis. \emph {Springer-Verlag New York}.
+#' @references H. Wickham. 2016. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York.
 #'
-#' @seealso \code{\link[ggplot2]}
+#' @seealso \link[ggplot2]{ggplot}
 #'
 #' @examples
 #' ## Random example
@@ -30,13 +30,15 @@
 #' lith <- c("Conglomerate", "Sandstone", "Siltstone", "Claystone")
 #' width <- c(2.5, 2, 1.5, 1)
 #' color <- palette()[2:5]
-#' lithology <- sample(lith, 101, replace = T)
+#' lithology <- sample(lith, 101, replace = TRUE)
 #'
 #' df1 <- data.frame(bed, lithology)
 #' df2 <- data.frame(lith, width, color)
 #'
 #' ggstrata(df1 = df1, df2 = df2)
 #'
+#' @import ggplot2
+#' @import dplyr
 #' @export
 ggstrata <- function(df1,
                      bed = 1,
